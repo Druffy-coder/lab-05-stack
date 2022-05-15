@@ -1,3 +1,5 @@
+// Copyright 2022 Semenihin Dmitriy <SemenihinDmit@yandex.ru>
+
 #ifndef INCLUDE_SECEX_HPP_
 #define INCLUDE_SECEX_HPP_
 #include <stdexcept>
