@@ -100,7 +100,6 @@ class Stack {
   }
 
   const T& head() const { return this->last->value; }
-
   Stack<T>& operator=(const Stack<T>& right) = delete;
 
   Stack<T>& operator=(Stack<T>&& right) {
