@@ -1,5 +1,3 @@
-// Copyright 2020 Andrew Prokushev <senior.prockuschev2017@yandex.ru>
-
 #ifndef INCLUDE_SECEX_HPP_
 #define INCLUDE_SECEX_HPP_
 #include <stdexcept>

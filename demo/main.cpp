@@ -34,17 +34,21 @@ class SomeType {
     return true;
   };
 
+
   SomeType& operator=(SomeType* right) noexcept {
     f = right->f;
     ft = right->ft;
     return *this;
   }
 
+
   SomeType& operator=(const SomeType& right) = default;
+
 
   void print() const {
     std::cout << f << " " << ft << std::endl;
   }
+
 
   std::string string() const {
     std::string a = std::to_string(f) + " " + std::to_string(ft);
@@ -52,35 +56,8 @@ class SomeType {
   }
 };
 
-int main() {
-  //  Stack<int> stack;
-  //  const int& left = 50;
-  //  stack.push(10);
-  //  std::cout << stack.head() << std::endl;
-  //
-  //  stack.push(20);
-  //  std::cout << stack.head() << std::endl;
-  //  stack.push(30);
-  //  std::cout << stack.head() << std::endl;
-  //  stack.push(40);
-  //  std::cout << stack.head() << std::endl;
-  //  stack.push(left);
-  //  std::cout << stack.head() << std::endl;
-  //  stack.pop();
-  //  std::cout << stack.head() << std::endl;
-  //  stack.pop();
-  //  std::cout << stack.head() << std::endl;
-  //  stack.pop();
-  //  std::cout << stack.head() << std::endl;
-  //  std::cout << "Stack " << stack.head() << std::endl;
-  //  Stack<int> stack1;
-  //  stack1.push(333);
-  //  std::cout << "Stack1 " << stack1.head() << std::endl;
-  //  //   Оператор перемещения.
-  //  stack1 = Stack<int>(444);
-  //  std::cout << "Stack " << stack.head() << std::endl;
-  //  std::cout << "Stack1 " << stack1.head() << std::endl;
 
+int main() {
   StackSec<SomeType> stack2(SomeType{11 });
   stack2.head().print();
   stack2.push_emplace(22, 22.0);
