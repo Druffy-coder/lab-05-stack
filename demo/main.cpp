@@ -1,3 +1,5 @@
+// Copyright 2022 Semenihin Dmitriy <SemenihinDmit@yandex.ru>
+
 #include <fisex.hpp>
 
 #include "iostream"
